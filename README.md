@@ -1,7 +1,46 @@
-# Install
-Install and hit this URL
+### Setting Up the Project
+
+#### Using a Local Development Server (WAMP/XAMPP)
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/amit-exp/bogo.git
+    ```
+
+2. **Move the `bogo` folder:**
+    Move the `bogo` folder to your preferred local development server directory (e.g., `www` directory for WAMP or `htdocs` directory for XAMPP).
+
+3. **Navigate to the project directory:**
+    Open a terminal or command prompt, navigate to your local development folder, and run the following commands:
+
+    ```bash
+    cp .env.example .env
+    composer install
+    php artisan key:generate
+    php artisan migrate
+    ```
+
+#### Using Docker
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/amit-exp/bogo.git
+    ```
+
+2. **Run docker command:**
+    Goto `bogo` folder and run the following command:
+    ```bash
+    docker-compose up --build --force-recreate
+    ```
+<b>The development URL will look like this </b><br>
 http://localhost:8080/public/discounts?prices=10,20,30,40,50,60
-<b>Note:</b> Implemented entire logic in App\Services\RuleService file.
+
+You have to pass the prices in `prices` parameter.
+
+the output will be like this.
+https://prnt.sc/-LjJ4z7ADCK6
+
+
 # bogo
 
 
