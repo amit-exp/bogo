@@ -1,5 +1,9 @@
-# bogo
+# Install
+Install and hit this URL
+http://localhost:8080/public/discounts?prices=10,20,30,40,50,60
 <b>Note:</b> Implemented entire logic in App\Services\RuleService file.
+# bogo
+
 
 The Big Diwali Sale: 
 The Diwali sale is approaching. The marketing team has decided to run a campaign called “BOGO” - Buy one Get one Free. Customers can buy any number of products. 
